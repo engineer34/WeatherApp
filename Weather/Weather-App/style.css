@@ -1,0 +1,8 @@
+body{
+    font-family:Arial;
+    text-align: center;
+
+}
+#weather-result{
+    margin-top: 22px;
+}
