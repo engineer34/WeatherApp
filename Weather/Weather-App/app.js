@@ -1,5 +1,5 @@
 async function findWeather(city){
-    const API_KEY="77d269de078f8b1b93c90ec8498dbc65";
+    const API_KEY="your api key";
     //where we are pulling our data info from our weather API
 const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
 const res=await fetch(url);
@@ -29,4 +29,5 @@ function displayWeather(data){
     <p>${data.weather[0].description}</p>
     <p>Temp: ${data.main.temp} °C</p>`;
 }
+
 
