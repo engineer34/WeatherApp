@@ -1,7 +1,9 @@
+//async makes our function asynchronous
 async function findWeather(city){
     const API_KEY="your api key";
     //where we are pulling our data info from our weather API
 const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+    //await just reads like synchronous code and fetches our url
 const res=await fetch(url);
 //fetches the url and returns data to out website
 const data=await res.json();
@@ -29,5 +31,6 @@ function displayWeather(data){
     <p>${data.weather[0].description}</p>
     <p>Temp: ${data.main.temp} °C</p>`;
 }
+
 
 
